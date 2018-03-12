@@ -5,19 +5,14 @@ $(document).ready(function () {
         $(this).toggleClass('open');
     });
 });
-
-
 //popup
 $(document).ready(function () {
-
     $('body').addClass('opened').on('click', function () {
         $('#mySidenav, #nav-icon2').removeClass('open');
     });
-
     var e = $.Event("keydown", {
         keyCode: 27
     });
-
     $('body').keydown(function (e) {
         if (e.keyCode == 27) {
             $('#mySidenav, #nav-icon2').removeClass('open');
@@ -27,20 +22,15 @@ $(document).ready(function () {
             }, 100);
         }
     });
-
     $('#escape').click(function () {
         $("body").trigger(e);
     });
-
-
-
     popup = {
         init: function () {
             $('figure').click(function () {
                 console.log('clicked');
                 popup.open($(this));
             });
-
             $(document).on('click', '.popup img', function () {
                 return false;
             }).on('click', '.popup', function () {
@@ -68,7 +58,5 @@ $(document).ready(function () {
             }, 100);
         }
     }
-
     popup.init();
-
 });
