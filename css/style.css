@@ -1075,6 +1075,9 @@ img {
 /*resposive*/
 
 @media screen and (max-width: 768px) {
+    .nav-icon2::before {
+	border: 1px solid #F7C766;
+}
     .logo {
     margin-left: 10px;
     max-width: 150px;
