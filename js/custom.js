@@ -1,8 +1,9 @@
 // menu
 $(document).ready(function () {
-    $('#nav-icon2').click(function () {
+    $('#nav-icon2').click(function (y) {
         $('.sidenav').toggleClass('open');
         $(this).toggleClass('open');
+        y.stopPropogation();
     });
 });
 //popup
