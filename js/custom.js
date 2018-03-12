@@ -13,7 +13,7 @@ $(document).ready(function(){
 var e = $.Event("keydown", {
     keyCode: 27
 });
- $('body').addClass('close').on('click', function () {
+ $('body').addClass('opened').on('click', function () {
             $('#mySidenav, #nav-icon2').removeClass('open');
         });
 	
