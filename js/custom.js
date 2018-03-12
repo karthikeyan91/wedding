@@ -13,11 +13,14 @@ $(document).ready(function(){
 var e = $.Event("keydown", {
     keyCode: 27
 });
-
+ $('body').addClass('close').on('click', function () {
+            $('#mySidenav, #nav-icon2').removeClass('open');
+        });
+	
   $('body').keydown(function(e) {
     if (e.keyCode == 27) {
       $('#mySidenav, #nav-icon2').removeClass('open');
-        $('.gallery, .popup, #mySidenav').removeClass('pop');
+        $('.gallery, .popup').removeClass('pop');
     setTimeout(function(){
       $('.popup').remove()
     }, 100);
