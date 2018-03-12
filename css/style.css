@@ -409,6 +409,7 @@ header {
 .logo-his {
     padding: 0;
     width: 335px;
+    margin: 0 auto;
 }
 
 .more {
@@ -1073,9 +1074,6 @@ img {
 /*resposive*/
 
 @media screen and (max-width: 768px) {
-    .logo-his {
-    margin: 10px auto 0;
-    }
     .logo {
     margin-left: 10px;
     max-width: 150px;
