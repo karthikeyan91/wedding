@@ -17,7 +17,7 @@ var e = $.Event("keydown", {
   $('body').keydown(function(e) {
     if (e.keyCode == 27) {
       $('#mySidenav, #nav-icon2').removeClass('open');
-        $('.gallery, .popup').removeClass('pop');
+        $('.gallery, .popup, #mySidenav').removeClass('pop');
     setTimeout(function(){
       $('.popup').remove()
     }, 100);
