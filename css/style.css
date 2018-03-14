@@ -53,6 +53,10 @@ body {
     margin-bottom: 10px;
 }
 
+.pad20 {
+padding: 20px;	
+}
+
 .color-white {
     color: #fff;
 }
@@ -256,6 +260,12 @@ section.right-section {
 }
 .header-social .fa-twitter-square {
   color: #62c6e6;
+}
+.free {
+	font-size: 40px;
+}
+.house {
+	font-size: 28px;
 }
 .header-social p {
   margin: 0;
