@@ -1,6 +1,6 @@
 body {
     background-color: rgb(28, 29, 33);
-    /* overflow: hidden; */
+    /* overflow: hidden;
     /* position: fixed; */
 }
 
@@ -1085,6 +1085,10 @@ img {
 /*resposive*/
 
 @media screen and (max-width: 768px) {
+	body {
+    overflow-X: hidden;
+}
+
     .nav-icon2::before {
 	border: 1px solid #F7C766;
 }
