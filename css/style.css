@@ -1086,7 +1086,7 @@ img {
 
 @media screen and (max-width: 768px) {
 	body {
-    overflow-X: hidden;
+    overflow-x: hidden;
 }
 
     .nav-icon2::before {
