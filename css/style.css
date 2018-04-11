@@ -349,7 +349,7 @@ section.right-section {
 
 header {
     min-height: 90px;
-    border-top: 5px solid #f7c766;
+    /*border-top: 5px solid #f7c766;*/
     padding-bottom: 5px;
     border-bottom: 1px solid;
 }
