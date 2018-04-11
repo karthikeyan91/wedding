@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(28, 29, 33);
+	background: url('../assets/index-border-top.gif') repeat-x scroll -500% 0 #1C1D21;
 }
 
 * {
