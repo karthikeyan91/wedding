@@ -304,17 +304,10 @@ section.right-section {
 .sidenav.open {
     transform: translateX(0%);
 }
-.sidenav a {
-	 -ms-transform: scale(0, 0);
-	-webkit-transform: scale(0, 0);
-	-moz-transform: scale(0, 0);
-	transform: scale(0, 0);
-}
 .sidenav.open a {
-	 -ms-transform: scale(1, 1);
-	-webkit-transform: scale(1, 1);
-	-moz-transform: scale(1, 1);
-	transform: scale(1, 1);
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	transform: translateX(0);
 }
 .sidenav.open a:first-of-type {
 	-webkit-transition-delay: 0.5s;
@@ -342,8 +335,11 @@ section.right-section {
     font-size: 20px;
     color: rgb(129, 129, 129);
     display: block;
-    transition: 0.3s;
+    transition-duration: 1s;
     position: relative;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
 }
 
 .sidenav a:hover {
