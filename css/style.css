@@ -1113,7 +1113,9 @@ img {
 	body {
     overflow-x: hidden;
 }
-
+.carousel-indicators {
+	display:none;
+	}
     .nav-icon2::before {
 	border: 1px solid #F7C766;
 }
