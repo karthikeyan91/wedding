@@ -316,22 +316,22 @@ section.right-section {
 	-moz-transform: scale(1, 1);
 	transform: scale(1, 1);
 }
-.sidenav.open a:first-child {
+.sidenav.open a:first-of-type {
 	-webkit-transition-delay: 0.5s;
 	-moz-transition-delay: 0.5s;
 	transition-delay: 0.5s;
 }
-.sidenav.open a:nth-child(2) {
+.sidenav.open a:nth-of-type(2) {
 	-webkit-transition-delay: 1s;
 	-moz-transition-delay: 1s;
 	transition-delay: 1s;
 }
-.sidenav.open a:nth-child(3) {
+.sidenav.open a:nth-of-type(3) {
 	-webkit-transition-delay: 1.5s;
 	-moz-transition-delay: 1.5s;
 	transition-delay: 1.5s;
 }
-.sidenav.open a:last-child {
+.sidenav.open a:last-of-type {
 	-webkit-transition-delay: 2s;
 	-moz-transition-delay: 2s;
 	transition-delay: 2s;
