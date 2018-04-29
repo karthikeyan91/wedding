@@ -335,7 +335,7 @@ section.right-section {
     font-size: 20px;
     color: rgb(129, 129, 129);
     display: block;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     position: relative;
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
