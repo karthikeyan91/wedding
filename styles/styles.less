@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "open-sans";
+    src: url("../assets/Open_Sans/OpenSans-Regular.ttf");
+}
+@font-face {
+    font-family: "open-sans-bold";
+    src: url("../assets/Open_Sans/OpenSans-Bold.ttf");
+}
+@font-face {
+    font-family: "open-sans-light";
+    src: url("../assets/Open_Sans/OpenSans-Light.ttf");
+}
+
+/*variables*/
+.mt-10 {margin-top: 10px;}
+.pad-20 {padding: 20px;}
+.pos-fix {position: fixed;}
+.pos-abs{position: absolute;}
+.pos-rel{position:relative;}
+.full-width{width: 100%;}
+.white {color: #fff;}
+/*actual styles*/
+img {
+    max-width: 100%;
+}
+body.body-main {
+    font-family: "open-sans";
+    padding: 0.01% 0;
+}
+.logo {
+    display: block;
+    img {
+        max-width: 55px;
+    }
+}
+.container {
+    max-width: 1140px;
+}
+header {
+    .pos-fix;
+    .full-width;
+    top: 0;
+    left: 0;
+	z-index: 9;
+    .nav {
+        li {
+            a {
+                .white;
+                &:hover,
+				&:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+@keyframes blink {
+	0% {opacity: 0}
+	49%{opacity: 0}
+	50% {opacity: 1}
+}
+.banner {
+    .pos-rel;
+    .text-big {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 260px;
+		margin-left: 105px;
+		h2.looking {
+			font-size: 50px;
+			color: #171f3c;
+			line-height: 55px;
+			font-weight: 700;
+			font-family: "open-sans-bold";
+		}
+		.typewrite {
+			font-size: 35px;
+			line-height: 55px;
+			font-weight: 600;
+			color: #fa6262;
+			white-space: pre;
+		}
+		h3 {
+			font-family: "open-sans-light";
+			margin-bottom: 30px;
+			margin-top: 10px;
+			font-size: 25px;
+			line-height: 35px;
+		}
+    }
+	.wrap {
+		.pos-rel;
+		&:after {
+		content: '';
+		position: absolute;
+		height: 40px;
+		width: 3px;
+		background: #fa6262;
+		right: -8px;
+		top: 8px;
+		animation: blink 0.5s infinite;
+	}
+	}
+}
+.btn.btn-red {
+	background-color: #fa6262;
+	color: #fff;
+	box-shadow: 0 5px 15px rgba(250, 98, 98, 0.4);
+	&:hover {
+		background-color: #fa6262;
+		color: #fff;
+		box-shadow: 0 8px 25px rgba(250, 98, 98, 0.55);
+	}
+}
