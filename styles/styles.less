@@ -20,20 +20,35 @@
 .full-width{width: 100%;}
 .white {color: #fff;}
 .padd-80{padding-bottom: 80px; padding-top: 80px;}
+.mg-tp-30 {margin-top: 30px;}
+.mg-bt-30 {margin-bottom: 30px;}
+.padd-40 {padding-top: 40px;padding-bottom: 40px;}
 /*actual styles*/
 img {
     max-width: 100%;
 }
 body.body-main {
-    font-family: "open-sans";
+    font-family: "open-sans-light";
     padding: 0.01% 0;
 	color: #637282;
+	font-size: 16px;
+	line-height: 26px;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
 }
 .logo {
     display: block;
     img {
         max-width: 55px;
     }
+}
+.bg-color {
+	background-color: #f8f9f9;
+}
+.bg-color-1 {
+	background-color: #fa6262;
 }
 .container {
     max-width: 1140px;
@@ -87,7 +102,6 @@ header {
 			white-space: pre;
 		}
 		h3 {
-			font-family: "open-sans-light";
 			margin-bottom: 30px;
 			margin-top: 10px;
 			font-size: 25px;
@@ -120,7 +134,6 @@ header {
 	}
 }
 .sec1 {
-	.pos-rel;
 	margin-bottom: 40px;
 	min-height: 600px;
 		.banner-img {
@@ -188,7 +201,6 @@ header {
 		font-weight: 300;
 	}
 	p {
-		font-family: "open-sans-light";
 		font-size: 16px;
 		line-height: 28px;
 		margin-bottom: 30px;
@@ -198,3 +210,68 @@ header {
 .btn:not(:disabled):not(.disabled) {
 	cursor: pointer;
 }
+.list-p li {
+	position: relative;
+	padding-left: 25px;
+	font-weight: 600;
+	list-style: none;
+	&::before {
+		.pos-abs;
+		background-image: url("../assets/tick.png");
+		left: 2px;
+		top: 6px;
+		display: block;
+		width: 15px;
+		height: 15px;
+		content: '';
+		background-size: cover;
+	}
+}
+p.font-p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.progrees-bar-content .progress-bar {
+	background-color: #fa6262;
+	border-radius: 23px;
+	-moz-border-radius: 23px;
+	-webkit-border-radius: 23px;
+}
+.progrees-bar-content {
+	span {
+		font-family: "open-sans-bold";
+	}
+	.progress {
+		margin-top: 5px;
+		border-radius: 23px;
+		-moz-border-radius: 23px;
+		-webkit-border-radius: 23px;
+	}
+}
+	.number-block {
+		padding-top: 15px;
+		span {
+		color: #ffff;
+		display: block;
+		font-size: 50px;
+		line-height: 55px;
+		font-family: "open-sans-bold";
+		}
+		small {
+			font-family: "open-sans";
+			color: #fff;
+			font-size: 16px;
+		}
+	}
+	.number-text {
+		padding-left: 25px;
+		border-left: 5px solid #fff;
+		p {
+			color: #fff;
+			font-size: 25px;
+			line-height: 35px;
+			font-family: "open-sans-bold";
+		}
+	}
