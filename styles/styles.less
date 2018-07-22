@@ -53,6 +53,13 @@ ul, ol {
 .container {
     max-width: 1140px;
 }
+button {
+	&.btn.focus,
+	&.btn:focus, {
+		color: #fff;
+		text-decoration: none;
+	}
+}
 header {
     .pos-fix;
     .full-width;
@@ -97,7 +104,7 @@ header {
 		.typewrite {
 			font-size: 35px;
 			line-height: 55px;
-			font-weight: 600;
+			font-family: "open-sans-bold";
 			color: #fa6262;
 			white-space: pre;
 		}
@@ -275,3 +282,101 @@ p.font-p {
 			font-family: "open-sans-bold";
 		}
 	}
+	
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+
+}
+
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+div.filter {
+	img {		
+		border: 1px solid transparent;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+}
+
+.footer-top {
+	padding: 40px 0;
+	background-color: #171f3c;
+}
+.list-social {
+	padding-top: 15px;
+}
+.logo-footer img {
+	margin-bottom: 25px;
+}
+.text-footer p {
+	color: #adafc7;
+}
+
+.list-social li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer-top h5 {
+	color: #fff;
+	font-size: 16px;
+}
+
+
+.footer-top .list-menu a {
+	line-height: 28px;
+	color: #adafc7;
+}
+
+.list-contact li {
+	color: #adafc7;
+	line-height: 32px;
+}
+
+.footer-bottom {
+	background-color: #0e142a;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.copyright {
+	text-align: center;
+	p {
+		margin: 0px auto;
+		padding: 0px;
+		color: #8688a4;
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.list-social li {
+	margin-right: 3px;
+}
+}
