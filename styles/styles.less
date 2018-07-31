@@ -23,6 +23,7 @@
 .mg-tp-30 {margin-top: 30px;}
 .mg-bt-30 {margin-bottom: 30px;}
 .padd-40 {padding-top: 40px;padding-bottom: 40px;}
+.t-color {color: #f62020;}
 /*actual styles*/
 img {
     max-width: 100%;
@@ -41,7 +42,7 @@ ul, ol {
 .logo {
     display: block;
     img {
-        max-width: 55px;
+        max-width: 200px;
     }
 }
 .bg-color {
@@ -69,7 +70,8 @@ header {
     .nav {
         li {
             a {
-                .white;
+			font-family: "open-sans";
+                color: #f06262;
                 &:hover,
 				&:focus {
                     background-color: transparent;
@@ -77,6 +79,13 @@ header {
             }
         }
     }
+	.navbar-nav {
+	text-align: right;
+	&>li {
+	float: none;
+	display: inline-block;
+	}
+	}
 }
 @keyframes blink {
 	0% {opacity: 0}
@@ -130,6 +139,10 @@ header {
 	}
 
 }
+.navbar {
+	background: rgba(255, 255, 255, 0.75);
+	box-shadow: 0 0 15px -10px #000;
+}
 .btn.btn-red {
 	background-color: #fa6262;
 	color: #fff;
@@ -141,6 +154,7 @@ header {
 	}
 }
 .sec1 {
+	.pos-rel;
 	margin-bottom: 40px;
 	min-height: 600px;
 		.banner-img {
