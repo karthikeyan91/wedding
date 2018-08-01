@@ -411,16 +411,23 @@ div.filter {
 }
 }
 @media only screen and (max-width: 767px) {
+	div.hb {
+		&.active {
+		&+.navbar ul {
+			display:block;
+			}
+		}
+	}
 .navbar ul {
 	.pos-abs;
 	display: none;
 	right: 20px;
-background: rgba(255, 255, 255, 0.7);
-border-radius: 5px;
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
 	top: 40px;
-	li {
-		display: block;
-text-align: left;
-	}
+		li {
+			display: block;
+			text-align: left;
+		}
 	}
 }
