@@ -59,6 +59,9 @@
 
 $(document).ready(function(){
     'use strict';
+	$('.hb').click(function(){
+	$(this).toggleClass('active');
+	});
 	$('.btn.filter-button').click(function(){
 		$('.btn.filter-button').removeClass('btn-red');
 		$(this).addClass('btn-red');
